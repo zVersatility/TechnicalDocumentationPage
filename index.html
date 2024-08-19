@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/img/pngwing.com.png" type="image/png">
+    <title>Arcane</title>
+</head>
+<body>
+    
+    <nav id="navbar" class="fixed-nav">
+        <button class="mobile-nav-toggle" style="display: none;">☰</button>
+        <header class="header__nav">Arcane</header>
+        <form class="search-form">
+            <input type="text" id="nav-search" placeholder="Buscar..." class="search-input">
+            <button type="button" class="search-button" onclick="search()">🔍</button>
+            <div id="autocomplete-list" class="autocomplete-items"></div>
+        </form>
+        
+        <audio id="audioPlayer" loop></audio>
+        <div class="audio-controls">
+                <select id="songSelector" onchange="changeSong()">
+                    <option value="audio/Ramsey - Goodbye  _ Arcane League of Legends _ Riot Games Music - Riot Games Music.mp3">Ramsey - Goodbye</option>
+                    <option value="/audio/Bea Miller - Playground  _ Arcane League of Legends _ Riot Games Music - Riot Games Music.mp3">Bea Miller - Playground</option>
+                    <option value="/audio/Bones UK - Dirty Little Animals _ Arcane League of Legends _ Riot Games Music - Riot Games Music.mp3">Bones UK - Dirty Little Animals</option>
+                    <option value="/audio/Curtis Harding ft. Jazmine Sullivan - Our Love  _ Arcane League of Legends _ Riot Games Music - Riot Games Music.mp3">Our Love</option>
+                    <option value="/audio/Denzel Curry, Gizzle, Bren Joy - Dynasties & Dystopia _ Arcane League of Legends _ Riot Games Music - Riot Games Music.mp3">Dynasties & Dystopia</option>
+                    <option value="/audio/Fantastic Negrito - When Everything Went Wrong _ Arcane League of Legends _ Riot Games Music - Riot Games Music.mp3">When Everything Went Wrong</option>
+                    <option value="/audio/Miyavi & PVRIS - Snakes _ Arcane League of Legends _ Riot Games Music - Riot Games Music.mp3">Snakes</option>
+                    <option value="/audio/Pusha T & Mako - Misfit Toys _ Arcane League of Legends _ Riot Games Music - Riot Games Music.mp3">Misfit Toys</option>
+                    <option value="/audio/Sting - What Could Have Been _ Arcane League of Legends _ Riot Games Music - Riot Games Music.mp3">What Could Have Been</option>
+                    <option value="/audio/Woodkid - Guns for Hire _ Arcane League of Legends _ Riot Games Music - Riot Games Music.mp3">Guns for Hire</option>
+                </select>
+                <button id="playPauseButton">Play</button>
+        </div>
+        <ul class="ul__nav" id="nav-list">
+            <li><a class="nav-link" href="#arcane">Arcane</a></li>
+            <li><a class="nav-link" href="#Sinopsis">Sinopsis</a></li>
+            <li><a class="nav-link" href="#Personajes">Personajes</a>
+                <ul>
+                    <li><a class="nav-link" href="#Powder_(Jinx)">Powder (Jinx)</a></li>
+                    <li><a class="nav-link" href="#Vi_(Violet)">Vi (Violet)</a></li>
+                    <li><a class="nav-link" href="#Vander">Vander</a></li>
+                    <li><a class="nav-link" href="#Silco">Silco</a></li>
+                    <li><a class="nav-link" href="#Ekko">Ekko</a></li>
+                    <li><a class="nav-link" href="#Jayce">Jayce</a></li>
+                    <li><a class="nav-link" href="#Viktor">Viktor</a></li>
+                    <li><a class="nav-link" href="#Mel">Mel</a></li>
+                    <li><a class="nav-link" href="#Heimerdinger">Heimerdinger</a></li>
+                    <li><a class="nav-link" href="#Caitlyn">Caitlyn</a></li>
+                    <li><a class="nav-link" href="#Marcus">Marcus</a></li>
+                    <li><a class="nav-link" href="#Singed">Singed</a></li>
+                    <li><a class="nav-link" href="#Sevika">Sevika</a></li>
+                    <li><a class="nav-link" href="#Grayson">Grayson</a></li>
+                    <li><a class="nav-link" href="#Consejales">Consejales</a></li>
+                    <li><a class="nav-link" href="#Deckard">Deckard</a></li>
+                    <li><a class="nav-link" href="#Claggor">Claggor</a></li>
+                    <li><a class="nav-link" href="#Ambessa_Medarda">Ambessa Medarda</a></li>
+                    <li><a class="nav-link" href="#Sky_Young">Sky Young</a></li>
+                    <li><a class="nav-link" href="#Mylo">Mylo</a></li>
+                    <li><a class="nav-link" href="#Huck">Huck</a></li>
+                    <li><a class="nav-link" href="#Benzo">Benzo</a></li>
+                    <li><a class="nav-link" href="#Elora">Elora</a></li>
+                    <li><a class="nav-link" href="#Babette">Babette</a></li>
+                    <li><a class="nav-link" href="#Finn">Finn</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <main id="main-doc" class="content">
+        <section class="main-section" id="arcane">
+            <header>Arcane</header>
+            <img src="img/arcane.jpg" alt="Poster de Arcane" class="main__Section__img__arcane" >
+            <article>
+                <p>Arcane es una serie de televisión por internet animada 
+                    franco-estadounidense de aventuras y drama​ ambientada en 
+                    el universo de League of Legends. La serie fue anunciada durante 
+                    las celebraciones del décimo aniversario del videojuego. ​Fue desarrollada y 
+                    producida internamente y con financiación independiente, por Riot Games, con servicios
+                    de animación del estudio francés Fortiche Production, el cual ya había producido 
+                    una animación de aspecto similar para League of Legends.
+                </p>
+                <ul>
+                    <li>Originalmente programada para un lanzamiento en 2020, la serie 
+                        se reprogramó para un lanzamiento en 2021 debido a la pandemia de COVID-19.
+                    </li>
+                    <li>La serie se estrenó finalmente a nivel mundial el 6 de noviembre de
+                        2021 tanto en la plataforma de vídeo de Netflix como en Tencent Video en China, cuya 
+                        empresa matriz, Tencent, es propietaria del propio videojuego así como de su 
+                        fabricante, Riot Games.
+                    </li>
+                    <li>
+                        La serie no lanzó la enteridad de la temporada de golpe, sino que esta 
+                        fue dividida en tres "actos" de 3 episodios cada uno, lanzados durante 3 semanas 
+                        consecutivas, el 7, 13 y 20 de noviembre de 2021 respectivamente.
+                    </li>
+                    <li>
+                        Ambientada en el pasado, vuelve a contar las historias de origen de varios personajes de Piltover y Zaun.
+                        <code>Arcane está dirigido a una audiencia de "16+".</code>
+                    </li>
+                    <li>Se anunció la segunda temporada que será transmitida en <code>Noviembre 2024 por Netflix</code></li>
+                </ul>
+
+            </article>
+        </section>
+        <section class="main-section" id="Sinopsis">
+            <header>Sinopsis</header>
+            <article>
+                <p>
+                    La historia de Arcane se desarrolla en las ciudades de Piltover y Zaun, ubicadas 
+                    en el mundo de Runeterra. Piltover es una ciudad próspera, conocida por su academia y avances 
+                    científicos, mientras que Zaun, su contraparte subterránea, está marcada por la pobreza, la 
+                    criminalidad y la contaminación química, operando sin ninguna autoridad central. Las tensiones y 
+                    rivalidades entre Piltover y Zaun dividen familias y amigos. Vi y Powder, dos hermanas de Zaun, y 
+                    Jayce y Viktor, dos amigos inventores bajo la tutela del legendario científico Heimerdinger, son 
+                    algunos de los personajes cuyas relaciones se ven afectadas. La creación de Hextech en 
+                    Piltover, una tecnología que permite a cualquiera controlar la energía mágica, exacerba estas 
+                    tensiones. Mientras tanto, en Zaun, una nueva droga transforma a los humanos en 
+                    monstruos, intensificando aún más el conflicto entre las dos ciudades.
+                </p>
+            </article>
+        <div class="Sinopsis__figure">
+            <figure>
+                <a href="https://universe.leagueoflegends.com/es_ES/region/piltover/" target="_blank"><img src="/img/Piltover.jpg" alt=" Imagen de la Ciudad de Piltover"></a>
+                <figcaption class="figcaption_font">Ciudad de Piltover</figcaption>
+            </figure>
+            <figure>
+                <a href="https://universe.leagueoflegends.com/es_ES/region/zaun/" target="_blank"><img src="/img/zaum.jpg" alt="Imagen de la Ciudad de Zaun"></a>
+                <figcaption class="figcaption_font">Ciudad de Zaun</figcaption>
+            </figure>
+
+        </div>
+        </section>
+        <section class="main-section" id="Personajes">
+            <header>Personajes</header>
+        </section>
+        <section class="main-section" id="Powder_(Jinx)">
+            <header>Powder (Jinx)</header>
+            <div class="main__section_div">
+                <article>
+                    <p>Una niña huérfana que vaga por los suburbios de Zaun junto a su hermana mayor, Vi y 
+                        bajo la tutela de Vander, su padre adoptivo. Tiene indicios de psicopatía y esquizofrenia 
+                        debido a distintos traumas que sufrió en el pasado, especialmente desde la muerte 
+                        de Vander, Mylo y Claggor, que esta provocó accidentalmente con uno de sus explosivos. Pero lo
+                        que la catapultó a la soledad y la locura fue principalmente el abandono de su hermana 
+                        Vi desde aquel incidente, lo que a su vez provocó que Jinx tuviera un fuerte resentimiento 
+                        por su hermana a raíz de ello, pero también es una muy creativa y explosiva inventora.
+                    </p>
+                </article>
+                <img src="/img/jinx.jpg" alt="Poster de Jinx" class="Personaje__img">
+            </div>
+            
+        </section>
+        <section class="main-section" id="Vi_(Violet)">
+            <header>Vi (Violet)</header>
+            <div class="main__section_div">
+                <article>
+                    <p>
+                        Una adolescente huérfana que vaga por los suburbios de Zaun junto a su hermana 
+                        pequeña, Powder y bajo la tutela de Vander, su padre adoptivo. Es una experta del 
+                        combate cuerpo a cuerpo, de sangre caliente y poca paciencia, aunque toda una líder. Sin 
+                        embargo, desde el incidente que le costó la vida a Vander, Mylo y Claggor, provocado de forma 
+                        accidental por su hermana Powder, se enfureció con ella a tal grado esta le pidió que
+                        se largara de su vista y que nunca más volviera a verla. Sin embargo, tan pronto como le
+                        dijo todo esto y se alejó de ella llorando, Vi se arrepintió de todo lo que dijo y trató 
+                        de disculparse con su hermana, pero en ese momento Powder cayo bajo la tutela de Silco y trató
+                        de rescatarla. Desafortunadamente acabó siendo atrapada por Marcus, un agente de la policía de 
+                        Piltover que en ese entonces era un novato, que la arrestó bajo el pretexto de salvarla de una
+                        muerte segura si trataba de rescatar a Powder de Silco y es llevada a prisión. Unos años más
+                        tarde, Vi, ahora algo más madura, sería liberada de la cárcel de Piltover por una 
+                        joven oficial de policía llamada Caitlyn para ayudarla en su investigación sobre los 
+                        atentados provocados por Jinx y Silco. Además de ello, Vi trata de encontrarse con 
+                        su hermana una vez más para reconciliarse con ella por todo lo que le dijo en el pasado.
+                    </p>
+                </article>
+                <img src="/img/vi.jpg" alt="Poster de Violet" class="Personaje__img">   
+            </div>                 
+        </section>
+        <section class="main-section" id="Vander">
+            <header>Vander</header>
+            <div class="main__section_div">
+                <article>
+                    <p>
+                        El padre adoptivo de Powder y Vi, además de otros dos chicos, Mylo y Claggor. Es una de las personalidades más importantes de Zaun, debido a su pasado y el respeto que ha conseguido, además de ser propietario del bar "La última gota". Silco y él eran viejos amigos, pero Vander lo traicionó.
+                    </p>
+                </article>
+                <img src="/img/vander.jpg" alt="Poster de Vander" class="Personaje__img">
+            </div>               
+        </section>
+        <section class="main-section" id="Silco">
+            <header>Silco</header>
+            <div class="main__section_div">
+                <article>
+                    <p>
+                        El líder criminal del bajo mundo de Zaun, temido por todos en la ciudad y con la misión de experimentar con una droga morada nueva, llamada <code>shimmer</code> , que convierte a las personas en monstruos más fuertes aunque pierden completamente la cabeza. Él y Vander tienen cuentas pendientes.
+                    </p>
+                </article>
+                <img src="/img/silco.jpg" alt="Poster de Silco" class="Personaje__img">
+            </div>         
+        </section>
+        <section class="main-section" id="Jayce">
+            <header>Jayce</header>
+            <div class="main__section_div">         
+                <article>
+                    <p>
+                        Uno de los inventores más prometedores de Piltover, el cual pretende utilizar la magia que le salvó la vida cuando era pequeño para llevar a su ciudad a nuevos horizontes. Él, de la mano derecha y ayudante de Heimerdinger, tratará de crear una tecnología que lo haga posible. Es el alumno protegido de Heimerdinger.
+                    </p>
+                </article>
+                <img src="/img/jayce.jpg" alt="Poster de Jayce" class="Personaje__img"> 
+            </div>
+        </section>
+        <section class="main-section" id="Viktor">
+            <header>Viktor</header>
+            <div class="main__section_div">
+                <article>
+                    <p>
+                        La mano derecha y ayudante de Heimerdinger. Al igual que su amigo Jayce, quiere usar la tecnología <code>Hextech</code> para ayudar a los más necesitados y crear nuevas tecnologías en pro del progreso de Piltover.
+                    </p>
+                </article>
+                <img src="/img/victor.jpg" alt="Poster de Victor" class="Personaje__img">
+            </div>               
+        </section>
+        <section class="main-section" id="Mel">
+            <header>Mel</header>
+            <div class="main__section_div">
+                <article>
+                    <p>
+                        Una de los miembros del consejo de la ciudad de Piltover. Es la primera en interesarse en financiar los proyectos de Jayce, por la creación de Hextech. Unos años antes de los acontecimientos de la serie, Mel terminó siendo desterrada de su antiguo hogar en Noxus por su propia madre, debido a sus ideales de compasión y de debilidad, lo cual va en contra de las costumbres de los habitantes de Noxus y finalmente esta consiguió tener éxito en la ciudad de Piltover, convirtiéndose en la persona más adinerada de la ciudad.
+                    </p>
+                </article>
+                <img src="/img/mel.jpg" alt="Poster de Mel" class="Personaje__img">
+            </div>        
+            
+        </section>
+        <section class="main-section" id="Heimerdinger">
+            <header>Heimerdinger</header>
+            <div class="main__section_div">
+                <article>
+                    <p>
+                        Un legendario científico e inventor, fundador de la ciudad de Piltover. Es un <code>yordle</code>, una raza de criaturas milenarias. Tiene a Jayce y a Viktor como sus alumnos, además de formar parte del consejo de la ciudad del progreso.
+                    </p>
+                </article>
+                <img src="/img/Heimendinger.webp" class="Personaje__img">
+            </div>
+                
+        </section>
+        <section class="main-section" id="Caitlyn">
+            <header>Caitlyn</header>
+            <div class="main__section_div">   
+                <article>
+                    <p>
+                        Descendiente de una de las familias nobles de Piltover. Actualmente trabaja para el departamento de policía de Piltover y es una experta con el rifle de francotirador y una detective implacable. Hace alianza con Vi en un intento de desenmascarar un caso de corrupción relacionado con Silco y, de paso, arrestar a Jinx por todos los constantes atentados que esta provoca.
+                    </p>
+                </article>
+                <img src="/img/caitlyn.jpg" alt="Poster de Caitlyn" class="Personaje__img">
+            </div>      
+            
+        </section>
+        <section class="main-section" id="Ekko">
+            <header>Ekko</header>
+            <figure class="section__figure__render">
+                <img src="/img/Ekko_Arcane_Render.webp" alt="Render de Ekko" >
+                <figcaption>
+                    <p class="figcaption_font">
+                        Un joven genio inventor amigo de Powder. Fue adoptado por un viejo amigo de Vander y trabaja en su local.
+                    </p>
+                </figcaption>
+            </figure>
+        </section>
+        <section class="main-section" id="Singed">
+            <header>Singed</header>
+            <figure class="section__figure__render__02">
+                <img src="/img/Singed_Arcane_render.webp" alt="Poster de Singed">
+                <figcaption>
+                    <p class="figcaption_font">
+                        Un alquimista de Zaun con un intelecto inigualable que ha dedicado su vida a superar los límites del conocimiento sin importar el costo, incluso si este es su propia cordura.
+                    </p>
+                </figcaption>
+            </figure>
+        </section>
+        <section class="main-section" id="Sevika">
+            <header>Sevika</header>
+            <figure class="section__figure__render__02">
+                <img src="/img/Sevika_Arcane_Render.webp" alt="Poster de Sevika">
+                <figcaption>
+                    <p class="figcaption_font">
+                        Una residente de The Lanes que, junto con varios otros, se une a la causa de Silco después de estar en desacuerdo con el pacifismo de Vander . En el segundo acto, ahora es la principal ejecutora de Silco.
+                    </p>
+                </figcaption>
+            </figure>
+        </section>
+        <section class="main-section" id="Grayson">
+            <header>Grayson</header>
+            <figure class="section__figure">
+                <img src="/img/Grayson.webp" alt="Poster de Grayson">
+                <figcaption>
+                    <p class="figcaption_font">
+                        Grayson fue el ex sheriff de los Piltover Enforcers , además de ser amigo de la familia Kiramman.
+                    </p>
+                </figcaption>
+            </figure>
+            
+        </section>
+        <section class="main-section" id="Marcus">
+            <header>Marcus</header>
+            <figure class="section__figure">
+                <img src="/img/Marcus.webp" alt="Poster de Marcus">
+                <figcaption>
+                    <P class="figcaption_font">
+                        Un oficial de la policía paramilitar de Piltover, el cual desea escalar en la cadena de comandos a cualquier precio.
+                    </P>
+                </figcaption>  
+            </figure>
+        </section>
+        <section class="main-section" id="Consejales">
+            <header>Consejales</header>
+            <article>
+                <p>
+                    Un grupo de políticos influyentes en Piltover, encargados de tomar decisiones importantes 
+                    para la ciudad. Los consejales tienen que equilibrar las necesidades de sus ciudadanos con 
+                    sus propios intereses y presiones políticas.
+                </p>
+            </article>   
+            <div class="Consejales__div">
+                <figure>
+                    <img src="/img/Shoola_Arcane_render.webp" alt="Shoola">
+                    <figcaption class="figcaption_font">Shoola</figcaption>
+                </figure>
+                <figure>
+                    <img src="/img/ConsejoJayce.webp" alt="Jayce Talis">
+                    <figcaption class="figcaption_font">Jayce Talis</figcaption>
+                </figure>
+                <figure>
+                    <img src="/img/Bolbok_Arcane_Render.webp" alt="Bolbok">
+                    <figcaption class="figcaption_font">Bolbok</figcaption>
+                </figure>
+                <figure>
+                    <img src="/img/concejoMel.webp" alt="Mel Madarda">
+                    <figcaption class="figcaption_font">Mel Madarda</figcaption>
+                </figure>
+                <figure>
+                    <img src="/img/Cassandra.webp" alt="Cassandra Kiramman">
+                    <figcaption class="figcaption_font">Cassandra Kiramman</figcaption>
+                </figure>
+                <figure>
+                    <img src="/img/Hoskel.webp" alt="Hoskel">
+                    <figcaption class="figcaption_font">Hoskel</figcaption>
+                </figure>
+            </div>       
+            <figure class="figure_salo">
+                <img src="/img/Salo.webp" alt="Salo">
+                <figcaption class="figcaption_font">Salo</figcaption>
+            </figure> 
+        </section>
+        <section class="main-section" id="Deckard">
+            <header>Deckard</header>
+            <figure class="section__figure">
+                <img src="/img/Deckard.webp" alt="Poster de Deckard">
+                <figcaption class="figcaption_font">Deckard es un matón zaunita que se alía con Silco</figcaption>
+            </figure>
+        </section>
+        <section class="main-section" id="Claggor">
+            <header>Claggor</header>
+            <figure class="section__figure__render">
+                <img src="/img/Claggor.webp" alt="Poster de Claggor">
+                <figcaption class="figcaption_font">Claggor es un niño que Vander había acogido . A través de él, Claggor pasó la mayor parte de su tiempo con los otros niños que Vander había acogido, a saber, Vi , Mylo y Powder .</figcaption>
+            </figure>
+        </section>
+        <section class="main-section" id="Ambessa_Medarda">
+            <header>Ambessa Medarda</header>
+            <figure class="section__figure">
+                <img src="/img/Ambessa.webp" alt="Poster de Ambessa Medarda">
+                <figcaption class="figcaption_font">Ambessa Medarda es una poderosa señora de la guerra y estadista en Noxus . Ella es la madre separada de Mel .</figcaption>
+            </figure>
+        </section>
+        <section class="main-section" id="Sky_Young">
+            <header>Sky Young</header>
+            <figure class="section__figure__render">
+                <img src="/img/Sky Young.jpg" alt="Poster de Sky Young">
+                <figcaption class="figcaption_font">El asistente de Viktor siente una admiración no correspondida por el científico.</figcaption>
+            </figure>
+        </section>
+        <section class="main-section" id="Mylo">
+            <header>Mylo</header>
+            <figure class="section__figure__render__02">
+                <img src="/img/Mylo_Arcane_Render.webp" alt="Poster de Mylo">
+                <figcaption class="figcaption_font">Mylo fue uno de los niños que Vander había acogido . A través de él, Mylo pasó la mayor parte de su tiempo con los otros niños que Vander había acogido, a saber, Vi , Claggor y Powder .</figcaption>
+            </figure>
+        </section>
+        <section class="main-section" id="Huck">
+            <header>Huck</header>
+            <figure class="section__figure">
+                <img src="/img/Huck1.webp" alt="Poster de Huck">
+                <figcaption class="figcaption_font">Un hombre de anteojos de aspecto necio que fue visto en Last Drop .</figcaption>
+            </figure>
+        </section>
+        <section class="main-section" id="Benzo">
+            <header>Benzo</header>
+            <figure class="section__figure">
+                <img src="/img/Benzo.webp" alt="Poster de Benzo">
+                <figcaption class="figcaption_font">Benzo es el dueño de una casa de empeños local y buen amigo de Vander.</figcaption>
+            </figure>
+        </section>
+        <section class="main-section" id="Elora">
+            <header>Elora</header>
+            <figure class="section__figure">
+                <img src="/img/Elora.webp" alt="Poster de Elora">
+                <figcaption class="figcaption_font">Elora es la mano izquierda y asistente del concejal Medarda .</figcaption>
+            </figure>
+        </section>
+        <section class="main-section" id="Babette">
+            <header>Babette</header>
+            <figure class="section__figure">
+                <img src="/img/Babette.webp" alt="Poster de Babette">
+                <figcaption class="figcaption_font">Babette es una prostituta de Whordle que es amiga de Vander.</figcaption>
+            </figure>
+        </section>
+        <section class="main-section" id="Finn">
+            <header>Finn</header>
+            <figure class="section__figure__render__02">
+                <img src="/img/Finn_Arcane_Render.webp" alt="Poster de Finn">
+                <figcaption class="figcaption_font">Finn es un barón químico de la ciudad subterránea.</figcaption>
+            </figure>
+        </section>
+        <footer>
+            <p>&copy; 2024 Fan Site de Arcane. Todos los derechos reservados.</p>
+            <a target="_blank" aria-label="Aracne" href="https://www.arcane.com/es-es/media/"><img class="footer-icon" alt="Github" src="/img/arcane-logo-a-2-b34b0493a79fb09b5ca3cff805292c7a.png"></a> 
+            <a target="_blank" aria-label="Linkedin" href="https://www.linkedin.com/in/pedro-huaman-mauricio/"><img class="footer-icon" alt="Linkedin" src="/img/linkedin.png"></a>
+            <a target="_blank" aria-label="Github" href="https://github.com/zVersatility"><img class="footer-icon" alt="Github" src="/img/social.png"></a>  
+            
+        </footer>
+    </main>
+    
+    <script src="app.js"></script>
+</body>
+</html>
