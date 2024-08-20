@@ -1,5 +1,5 @@
 <h1>Pagina de Documentacion tecnica </h1>
-<p>Pagina elaborada como parte de la certificacion de diseño web responsivo en FreeCodeCamp</p>
+<p>Pagina elaborada como parte de la certificación de diseño web responsivo en FreeCodeCamp</p>
 <h2>Contiene :</h2>
 <ul>
   <li>Navegador a la izquierda de la Pagina</li>
